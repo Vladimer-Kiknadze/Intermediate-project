@@ -1,0 +1,484 @@
+:root {
+  --clr-black: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header * {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: var(--clr-black);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+}
+
+.adress {
+  cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+  float: right;
+  text-align: center;
+  align-items: center;
+  gap: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.adress p {
+  width: 330px;
+}
+
+.adress a {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 150px;
+}
+
+.adress a img {
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+nav ul {
+  float: left;
+  gap: 70px;
+  opacity: 0.9;
+}
+
+nav ul li {
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li:first-child {
+  display: none;
+}
+
+nav ul li:first-child {
+  margin-top: 100px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+a:hover {
+  transition: 0.4s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 15px;
+  cursor: pointer;
+  display: none;
+  z-index: 2;
+}
+
+#check {
+  display: none;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section1 img {
+  width: 50%;
+  margin-top: 80px;
+  height: 640px;
+}
+
+.About-Bakery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 50%;
+  padding: 0 10px 0 65px;
+}
+
+.About-Bakery p {
+  width: 100%;
+  max-width: 390px;
+}
+
+.About-Bakery h2 {
+  margin-top: 120px;
+  color: #000;
+  z-index: -1;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.section2 img {
+  height: 640px;
+}
+
+.Our-Products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 30px;
+  width: 50%;
+  padding: 0 50px 0 0;
+}
+
+.Our-Products p {
+  width: 100%;
+  max-width: 390px;
+}
+
+.Our-Products h2 {
+  margin-right: 194px;
+  color: #000;
+}
+
+footer {
+  color: #fff;
+  padding: 30px;
+  background-color: var(--clr-black);
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-item input {
+  width: 350px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  padding: 4px;
+}
+
+input {
+  color: #fff;
+}
+
+input:focus {
+  border-bottom: 2px solid rgb(226, 0, 0);
+}
+
+.submit {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.submit button {
+  margin: 0;
+  background: #fff;
+  color: var(--clr-black);
+  border: 1px solid #fff !important;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit button:hover {
+  transition: 0.3s;
+  background: var(--clr-black);
+  color: #fff;
+}
+
+.follow-us {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icons img {
+  width: 40px;
+}
+
+@media (max-width: 980px) {
+  .section2 img {
+    width: 50%;
+    height: 640px;
+  }
+}
+
+@media (max-width: 950px) {
+  header * {
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .adress a {
+    display: none;
+  }
+
+  .adress p {
+    width: auto;
+    font-size: 14px;
+    text-align: start;
+    margin-left: 15px;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 80%;
+    height: 100vh;
+    background-color: var(--clr-black);
+    top: 0;
+    right: -100%;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    line-height: 25px;
+    margin-right: 50px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  nav ul li:first-child {
+    display: block;
+  }
+
+  nav ul li img {
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  a:hover {
+    background: none;
+    color: #818181;
+  }
+
+  #check:checked ~ ul {
+    right: 0;
+  }
+
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section1 img {
+    width: 90%;
+    margin-top: 150px;
+    height: 640px;
+  }
+
+  .About-Bakery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    padding: 40px;
+  }
+
+  .About-Bakery h2 {
+    color: #000;
+    margin-top: 0;
+    position: absolute;
+    top: 100px;
+  }
+
+  .section2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .section2 img {
+    height: 640px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .Our-Products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+    padding: 50px 50px;
+    width: 100%;
+  }
+
+  .Our-Products p {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .Our-Products h2 {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .form-container {
+    margin-top: 30px;
+    max-width: 770px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .form-item input {
+    width: 100%;
+  }
+
+  .submit {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .submit button {
+    width: 15%;
+  }
+
+  form h4 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 950px) {
+  nav ul {
+    gap: 0;
+  }
+
+  nav ul li:first-child {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section1 img {
+    width: 100%;
+    margin-top: 150px;
+    height: 300px;
+  }
+
+  .About-Bakery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding: 20px 20px 20px 40px;
+  }
+
+  .About-Bakery h2 {
+    color: #000;
+    margin-top: 0;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+  }
+
+  .section2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .section2 img {
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .Our-Products {
+    gap: 20px;
+    padding: 20px 20px;
+    width: 100%;
+  }
+
+  .Our-Products p {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .Our-Products h2 {
+    margin-right: 130px;
+    margin-bottom: 0;
+    width: 200px;
+  }
+}
+
+html {
+  animation: fadein 3s 1;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 5;
+  }
+}
